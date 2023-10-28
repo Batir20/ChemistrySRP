@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
+p {
+    margin-bottom: 0;
+    margin-top: 0;
+    font-family: "Jost", sans-serif;
+}
+body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.table__elem {
+    background: #ffffbc;
+    border-radius: 15px;
+    margin-left: 15px;
+    margin-top: 15px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.1s;
+    overflow: hidden;
+}
+.table__elem.yellow__elem {
+    background: #ffffbc;
+}
+.table__elem.green__elem {
+    background: #bcffc6;
+}
+.table__elem.blue__elem {
+    background: #bcd9ff;
+}
+.table__elem-main {
+    display: flex;
+    position: relative;
+    transition: 0;
+    height: 100%;
+}
+.table__elem-main p {
+    font-size: 28px;
+}
+.table__elem-rus {
+    color: rgb(96, 96, 96);
+    margin-right: 15px;
+}
+.table__elem p {
+    opacity: 0;
+    transition: 0.1s;
+}
+.table__elem:active p {
+    opacity: 1;
+}
+.table__elem:active .table__elem-znak {
+    /*top: auto;
+    right: auto;
+    left: auto;
+    bottom: auto;
+    position: inherit;*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0 !important;
+}
+.table__elem:active .table__elem-main {
+    height: auto;
+}
+.table__elem-znak {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.1s !important;
+    margin-right: 15px;
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+    opacity: 1 !important;
+}
+
+.table__elem-sec {
+    display: flex;
+    margin-top: 5px;
+    font-size: 18px;
+}
+.table__elem-group {
+    margin-right: 20px;
+}
+.table__elem-period {
+    margin-right: 20px;
+}
+.table__elem-num {
+    margin-right: 20px;
+    color: rgb(96, 96, 96);
+}
+.table__elem-mass {
+    margin-right: 20px;
+}
