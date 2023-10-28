@@ -102,3 +102,9 @@ body {
 .table__elem-mass {
     margin-right: 20px;
 }
+
+@media (max-width:510px) {
+    .table__elem {
+        width: 100%;
+    }
+}
