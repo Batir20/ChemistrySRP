@@ -6,6 +6,6 @@ for (let i = 0; i < elements.length; i++) {
         for (let x = 0; x < elements.length; x++) {
             elements[x].classList.remove("active");            
         }
-        elements[i].classList.toggle("active");
+        elements[i].classList.add("active");
     })
 }
