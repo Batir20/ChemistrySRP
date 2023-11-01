@@ -8,7 +8,6 @@ p {
 body {
     display: flex;
     flex-wrap: wrap;
-    padding: 15px 10px;
 }
 
 
@@ -48,10 +47,10 @@ body {
     opacity: 0;
     transition: 0.1s;
 }
-.table__elem:active p {
+.table__elem.active p {
     opacity: 1;
 }
-.table__elem:active .table__elem-znak {
+.table__elem.active .table__elem-znak {
     /*top: auto;
     right: auto;
     left: auto;
@@ -64,7 +63,7 @@ body {
     bottom: 0;
     opacity: 0 !important;
 }
-.table__elem:active .table__elem-main {
+.table__elem.active .table__elem-main {
     height: auto;
 }
 .table__elem-znak {
@@ -104,8 +103,5 @@ body {
     margin-right: 20px;
 }
 
-@media (max-width:510px) {
-    .table__elem {
-        width: 100%;
-    }
-}
+
+
